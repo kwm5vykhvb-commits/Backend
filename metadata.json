@@ -1,0 +1,8 @@
+{
+  "name": "NLSbox",
+  "description": "Moteur de streaming et exploration multimédia Telegram avec module IA Gemini (déduplication intelligente, ordonnancement S01E01, reconnaissance visuelle d'affiche et assistant conversationnel).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Wrapper pour exécuter uvicorn même s'il n'est pas dans le PATH global
+if command -v python3 >/dev/null 2>&1; then
+  exec python3 -m uvicorn "$@"
+elif command -v python >/dev/null 2>&1; then
+  exec python -m uvicorn "$@"
+else
+  echo "[uvicorn-wrapper] Python non trouvé, démarrage direct de Node.js..."
+  exec node dist/server.cjs
+fi
